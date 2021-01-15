@@ -52,7 +52,7 @@ class _LocationAppState extends State<LocationApp> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Login",
+                      "SI.GO",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 46.0,
@@ -62,7 +62,7 @@ class _LocationAppState extends State<LocationApp> {
                       height: 10.0,
                     ),
                     Text(
-                      "Enter to a beautifull word ",
+                      "Porto Velho - 2021",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
@@ -104,6 +104,60 @@ class _LocationAppState extends State<LocationApp> {
                           ),
                         ),
                       ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          fillColor: Color(0xFFe7edeb),
+                          hintText: "Password",
+                          prefixIcon: Icon(
+                            Icons.lock,
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            "Esqueceu sua senha?",
+                            style: TextStyle(
+                              color: Colors.blue[800],
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 50.0,
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: RaisedButton(
+                          onPressed: () {},
+                          color: Colors.blue[800],
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16.0),
+                            child: Text(
+                              "Login",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
